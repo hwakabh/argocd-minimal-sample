@@ -10,7 +10,7 @@ spec:
   minReadySeconds: 30
   strategy:
     type: RollingUpdate
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       color: blue
@@ -23,7 +23,7 @@ spec:
         color: blue
     spec:
       containers:
-      - image: docker.io/wakabh56/hwakabhcitest:f16c1cce142663289047d39f624221ba4bd00dc2
+      - image: docker.io/wakabh56/hwakabhcitest:205467c8d539fcfa84bfb927a4b92731d5450139
         name: nginx-alice
         ports:
           - containerPort: 80
