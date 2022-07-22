@@ -13,4 +13,4 @@ spec:
   selector:
     name: app
     color: blue
-  type: ClusterIP
+  type: LoadBalancer
